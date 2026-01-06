@@ -57,3 +57,45 @@ section {
     padding: 20px;
     font-size: 18px;
 }
+
+.about-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #444;
+    font-size: 16px;
+}
+
+.team-table {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.header {
+    background: #1976d2;
+    color: white;
+    font-weight: bold;
+}
+
+.row div {
+    text-align: center;
+}
