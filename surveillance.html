@@ -12,9 +12,6 @@ body { font-family:Arial; background:#f4f6f8; margin:0; }
 .camera { background:white; width:200px; padding:15px; border-radius:6px; }
 footer { margin-top:40px; text-align:center; padding:10px; background:#ddd; }
 .camera {
-    text-decoration: none;
-    color: black;
-    background: white;
     width: 200px;
     padding: 15px;
     border-radius: 8px;
@@ -24,29 +21,26 @@ footer { margin-top:40px; text-align:center; padding:10px; background:#ddd; }
     text-align: center;
     font-weight: bold;
 }
-/* Hover effect */
+.active {
+    border-left: 6px solid #2e7d32;
+    background: #e8f5e9; /* green-ish */
+}
+.motion {
+    border-left: 6px solid #f57c00;
+    background: #fff3e0; /* orange-ish */
+}
+.inactive {
+    border-left: 6px solid #c62828;
+    background: #fdecea; /* red-ish */
+}
 .camera:hover {
     transform: scale(1.05);
 }
 .camera:active {
     transform: scale(0.97);
 }
-/* Status styles */
-.active {
-    border-left: 6px solid #2e7d32;
-    background: #e8f5e9;
-}
-.motion {
-    border-left: 6px solid #f57c00;
-    background: #fff3e0;
-}
-.inactive {
-    border-left: 6px solid #c62828;
-    background: #fdecea;
-}
 </style>
 </head>
-
 <body>
 <div class="navbar">
 <h2>🏙️ Smart City</h2>
@@ -61,24 +55,22 @@ footer { margin-top:40px; text-align:center; padding:10px; background:#ddd; }
 </div>
 
 <div class="container">
-<h1>📷 Smart Surveillance System</h1>
-<div class="cameras">
-    <a href="camera-active.html" class="camera active">
-        📹 Camera 1<br>Status: Active
-    </a>
-    <a href="camera-active.html" class="camera active">
-        📹 Camera 2<br>Status: Active
-    </a>
-    <a href="camera-motion.html" class="camera motion">
-        📹 Camera 3<br>Status: Motion Detected
-    </a>
-    <a href="camera-inactive.html" class="camera inactive">
-        📹 Camera 4<br>Status: Not Active
-    </a>
+  <h1>📷 Smart Surveillance System</h1>
+  <div class="cameras">
+      <div class="camera active">
+          📹 Camera 1<br>Status: Active
+      </div>
+      <div class="camera active">
+          📹 Camera 2<br>Status: Active
+      </div>
+      <div class="camera motion">
+          📹 Camera 3<br>Status: Motion Detected
+      </div>
+      <div class="camera inactive">
+          📹 Camera 4<br>Status: Not Active
+      </div>
+  </div>
 </div>
-</div>
-</div>
-
 <footer>Smart City ICT Project © 2026</footer>
 </body>
 </html>
